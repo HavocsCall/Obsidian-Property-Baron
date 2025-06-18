@@ -24,7 +24,8 @@ class propertyBaronSettingsTab extends PluginSettingTab {
 
     display(): void {
         const { containerEl } = this;
-
+        containerEl.empty();
+        
         // Fill Tags with Properties Settings
         containerEl.createEl('h1', { text: 'Fill Tags with Properties' });
         
