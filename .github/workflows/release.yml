@@ -26,6 +26,11 @@ jobs:
             'manifest.json, package.json'
         env:
           VERSION: ${{steps.get_version.outputs.version-without-v}}
+
+      - name: Build plugin
+        run: |
+          npm install
+          npm run build
           
       - name: Create Module Archive
         run: zip -r ./PropertyBaron.zip main.js manifest.json styles.css
