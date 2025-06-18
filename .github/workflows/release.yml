@@ -33,7 +33,7 @@ jobs:
           npm run build
           
       - name: Create Module Archive
-        run: zip -r ./PropertyBaron/Obsidian-Property-Baron.zip main.js manifest.json styles.css
+        run: zip -r ./Obsidian-Property-Baron.zip main.js manifest.json styles.css
 
       - name: Update Release With Files
         id: create_version_release
