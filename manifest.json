@@ -1,7 +1,7 @@
 {
 	"id": "property-baron",
 	"name": "Property Baron",
-	"version": "1.0.0",
+	"version": "#{VERSION}#",
 	"minAppVersion": "0.15.0",
 	"description": "A plugin for various property related tasks",
 	"author": "HavocsCall",
