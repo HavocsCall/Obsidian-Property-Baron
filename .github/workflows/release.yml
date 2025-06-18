@@ -23,7 +23,7 @@ jobs:
         uses: cschleiden/replace-tokens@v1
         with:
           files:
-            'manifest.json'
+            '[manifest.json, package.json]'
         env:
           VERSION: ${{steps.get_version.outputs.version-without-v}}
 
